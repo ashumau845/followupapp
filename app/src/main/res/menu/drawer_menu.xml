@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="DashBoard"></item>
+
+        <item
+            android:id="@+id/nav_visit"
+            android:icon="@drawable/ic_work_black_24dp"
+            android:title="Visits"></item>
+
+       <!-- <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_visits_white_24dp"
+            android:title="Add Followup"></item>-->
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout"></item>
+    </group>
+
+</menu>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:background="@android:drawable/editbox_background_normal"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtproduct"
+            android:text="dsgjakj"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:id="@+id/img_edit_product"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_cancel_red_24dp"
+            android:id="@+id/img_cancel_product"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_qty_rate"
+            android:text="dsgjakj"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_margin="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_totalcost"
+            android:text="dsgjakj"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

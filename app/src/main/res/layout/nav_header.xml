@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:padding="16dp"
+        android:layout_width="117dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:id="@+id/menuprofile"
+        android:src="@drawable/pixel_tech_logo" />
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:layout_width="117dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:id="@+id/menuprofile"-->
+        <!--app:civ_border_color="#FFF"-->
+        <!--android:src="@drawable/profile"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:text="name@gmail.com"
+        android:textColor="@color/colorwhite"
+        />
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/nav_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Punch In"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/nav_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:trackTint="@android:color/darker_gray"
+            android:background="@android:color/white"
+            android:layout_marginRight="16dp" /></RelativeLayout>
+</LinearLayout>

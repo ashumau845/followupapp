@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FollowupApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="question">Are all smoke detectors,heat detectors,hooters and MLPs functioning properly?</string>
+    <string name="firesystem">FIRE ALARM SYSTEM</string>
+    <string name="accesssystem">ACCESS CONTROL SYSTEM</string>
+    <string name="cctvsystem">CCTV SYSTEM</string>
+    <string name="pasystem">PA SYSTEM</string>
+    <string name="fmsystem">FM-200 SYSTEM</string>
+    <string name="fmextsystem">FIRE EXTINGUISHER SYSTEM</string>
+    <string name="sprinklesystem">SPRINKLER SYSTEM</string>
+    <string name="vessystem">VESDA SYSTEM</string>
+    <string name="instsystem">INTRUSION SYSTEM</string>
+    <string name="google_maps_key_op">AIzaSyAKliGGgF9b3ttsTKyh1M39nkeSREVW8TM</string>
+    <string name="error_cannot_write">Cannot write image captured by camera.</string>
+    <string name="error_cannot_open">Cannot open camera.</string>
+    <string name="error_cannot_get_permission">Camera permission not available.</string>
+    <string name="error_not_having_camera">Your device does not have front camera.</string>
+    <string name="error_camera_permission_denied">Camera permission denied.</string>
+    <string name="btn_tittle_capture_image">Capture image</string>
+    <string name="string_digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ </string>
+</resources>

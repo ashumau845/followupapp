@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_drawable"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_margin="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_date"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_month"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="June"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"/>
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/followup_sample"/>
+
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/view"
+            android:layout_toRightOf="@id/linear"
+            android:layout_gravity="center_vertical"
+            android:layout_width="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/view"
+            android:layout_toLeftOf="@+id/linear_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Meet"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/txt_folloupComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_meeting_decp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12dp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_followupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Schedule Date:"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:id="@+id/txt_meeting_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10/5/2018"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_more"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            >
+
+            <ImageButton
+                android:id="@+id/imgbtn_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:layout_marginRight="5dp"/>
+
+
+            <ImageButton
+                android:id="@+id/imgbtn_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_delete_black_24dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

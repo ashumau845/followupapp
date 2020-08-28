@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#152d4d</color>
+    <color name="colorPrimaryDark">#0e1f35</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="orange">#ff9025</color>
+    <color name="red">#ed3237</color>
+    <!--<color name="background_black">#152d4d</color>-->
+    <color name="black_overlay">#66000000</color>
+    <color name="colorwhite">#FFF</color>
+    <color name="grey">#F5F5F5</color>
+    <color name="grey_dark">#C3C3C3</color>
+    <color name="blue_android">#10a8e1</color>
+    <color name="black">#000000</color>
+    <color name="disabled_gray">#eceaea</color>
+
+</resources>

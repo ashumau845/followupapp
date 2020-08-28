@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:id="@+id/btn_dialog_close"
+            android:src="@drawable/ic_close_black_24dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:layout_margin="5dp">
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spnr_select_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ms_arrowColor="#000000"
+        app:ms_arrowSize="15dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:ms_alwaysShowFloatingLabel="true"
+        app:ms_floatingLabelColor="@android:color/holo_red_dark"
+        app:ms_floatingLabelText="Purpose"
+        app:ms_hint="Select Purpose*" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dialog_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_corner_button4"
+                android:gravity="center"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white" />
+
+            <!--
+        <Button
+            android:id="@+id/btn_dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner_button4"
+            android:gravity="center"
+            android:text="CLOSE"
+            android:textColor="@android:color/white" />-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

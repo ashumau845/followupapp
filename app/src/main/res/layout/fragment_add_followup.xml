@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:text="FOLLOW UP DETAILS"/>-->
+
+   <!-- <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="Enter Customer Name" />
+    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spnr_select_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_arrowColor="#000000"
+            app:ms_arrowSize="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:ms_alwaysShowFloatingLabel="true"
+            app:ms_floatingLabelColor="@android:color/holo_red_dark"
+            app:ms_floatingLabelText="Customer"
+            app:ms_hint="Select Customer*" />
+
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spnr_select_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ms_arrowColor="#000000"
+        app:ms_arrowSize="15dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:ms_alwaysShowFloatingLabel="true"
+        app:ms_floatingLabelColor="@android:color/holo_red_dark"
+        app:ms_floatingLabelText="Service"
+        app:ms_hint="Select Service*" />
+    </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spnr_select_servicetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_arrowColor="#000000"
+                app:ms_arrowSize="15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:ms_alwaysShowFloatingLabel="true"
+                app:ms_floatingLabelColor="@android:color/holo_red_dark"
+                app:ms_floatingLabelText="Service Request"
+                app:ms_hint="Select Service*" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearlayout_followup"
+            android:visibility="gone">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_startdate"
+            android:text="22Oct2019"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8:53 AM"
+            android:gravity="right"
+            android:id="@+id/txt_starttime"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+
+        <!--<EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="StartDate"
+            android:id="@+id/startdate"
+            android:focusable="false"
+            android:gravity="center"
+            android:layout_weight="1" />-->
+       <!-- <TextView
+            android:id="@+id/startdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"/>-->
+
+      <!--  <TextView
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:layout_weight="2"
+            android:textColor="@android:color/black"/>
+
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"/>-->
+
+        <TextView
+            android:id="@+id/txt_endtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9:53 AM"
+            android:textColor="@android:color/black"
+            android:focusable="false"
+            android:gravity="right"
+            android:textSize="18sp" />
+    </LinearLayout>
+   <!-- <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_address"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">-->
+
+
+   <!-- <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:gravity="top"
+        android:hint="Comment*"
+        android:inputType="text"
+        android:maxLines="3"
+        android:padding="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="12dp" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_descrip"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_description"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Description"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:maxLines="5"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/layout_addquotation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapebackground"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_product"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_margin="12dp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_productname"
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:maxLength="15"
+                        android:hint="Product Name*" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_quantity"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_quantity"
+                            android:layout_width="match_parent"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:layout_height="wrap_content"
+                            android:maxLength="5"
+                            android:inputType="number"
+                            android:hint="Quantity*" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_rate"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_rate"
+                            android:layout_width="match_parent"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:layout_height="wrap_content"
+                            android:maxLength="5"
+                            android:inputType="numberDecimal"
+                            android:hint="Rate*" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnaddmore_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_corner_button4"
+                    android:gravity="center"
+                    android:text="ADD"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_addmoredynamicview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/addrecycler_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:id="@+id/txt_content_amount"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    <!--<Button
+        android:id="@+id/btnfollowup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/followupDate"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@android:color/holo_red_dark"
+        android:text="Submit"
+        android:textColor="@android:color/white" />-->
+
+        <Button
+            android:id="@+id/btnfollowup_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/followupDate"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner_button4"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+   <!-- </android.support.design.widget.TextInputLayout>-->
+
+    </LinearLayout>
+</ScrollView>
